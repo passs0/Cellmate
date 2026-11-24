@@ -10,7 +10,14 @@
           "glass" : true,
           "image-name" : "8.4 – layer.svg",
           "name" : "8.4 – layer",
-          "opacity" : 1
+          "opacity" : 1,
+          "position" : {
+            "scale" : 1,
+            "translation-in-points" : [
+              -7.64999992952653e-06,
+              -23.13432880000005
+            ]
+          }
         },
         {
           "fill" : {
@@ -19,7 +26,14 @@
           "glass" : true,
           "image-name" : "7.3 – layer.svg",
           "name" : "7.3 – layer",
-          "opacity" : 1
+          "opacity" : 1,
+          "position" : {
+            "scale" : 1,
+            "translation-in-points" : [
+              -7.64999992952653e-06,
+              -23.13432880000005
+            ]
+          }
         },
         {
           "fill" : {
@@ -28,7 +42,14 @@
           "glass" : true,
           "image-name" : "6.2 – layer.svg",
           "name" : "6.2 – layer",
-          "opacity" : 1
+          "opacity" : 1,
+          "position" : {
+            "scale" : 1,
+            "translation-in-points" : [
+              -7.64999992952653e-06,
+              -23.13432880000005
+            ]
+          }
         }
       ],
       "name" : "Group",
@@ -46,7 +67,7 @@
       "layers" : [
         {
           "fill" : {
-            "solid" : "extended-srgb:0.00000,0.53333,1.00000,1.00000"
+            "solid" : "extended-gray:0.50000,1.00000"
           },
           "glass" : true,
           "image-name" : "5.layer 14.svg",
@@ -55,8 +76,8 @@
           "position" : {
             "scale" : 0.99,
             "translation-in-points" : [
-              0,
-              0
+              -9.562499940329872e-06,
+              -28.917911000000004
             ]
           }
         },
@@ -69,18 +90,18 @@
           "position" : {
             "scale" : 0.99,
             "translation-in-points" : [
-              0,
-              0
+              -9.562499940329872e-06,
+              -28.917911000000004
             ]
           }
         }
       ],
       "opacity" : 1,
       "position" : {
-        "scale" : 0.92,
+        "scale" : 0.8,
         "translation-in-points" : [
           0,
-          0
+          52
         ]
       },
       "shadow" : {
@@ -99,15 +120,22 @@
           "glass" : true,
           "image-name" : "4.layer 13.svg",
           "name" : "4.layer 13",
-          "opacity" : 1
+          "opacity" : 1,
+          "position" : {
+            "scale" : 1,
+            "translation-in-points" : [
+              -9.562499940329872e-06,
+              -28.917911000000004
+            ]
+          }
         }
       ],
-      "opacity" : 0.78,
+      "opacity" : 1,
       "position" : {
-        "scale" : 0.92,
+        "scale" : 0.8,
         "translation-in-points" : [
           0,
-          0
+          52
         ]
       },
       "shadow" : {
@@ -127,7 +155,14 @@
           },
           "glass" : true,
           "image-name" : "2.1 – layer.svg",
-          "name" : "2.1 – layer"
+          "name" : "2.1 – layer",
+          "position" : {
+            "scale" : 1,
+            "translation-in-points" : [
+              -7.64999992952653e-06,
+              -23.13432880000005
+            ]
+          }
         }
       ],
       "opacity" : 1,
