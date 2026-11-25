@@ -21,53 +21,30 @@ struct CellmateApp: App {
     @State private var section: Section = .setup
 
     var body: some Scene {
-        WindowGroup {
-            VStack(spacing: 0) {
-                topBar
-                Divider()
-
+        WindowGroup("Cellmate") {
+            Group {
                 if section == .setup {
                     setupView
                 } else {
                     TableBuilderView()
                 }
             }
-            .frame(width: 560, height: 470)
-        }
-        .windowStyle(.hiddenTitleBar)
-        .windowResizability(.contentSize)
-    }
-
-    private var topBar: some View {
-        HStack(spacing: 12) {
-            Image(nsImage: NSApp.applicationIconImage)
-                .resizable()
-                .interpolation(.high)
-                .frame(width: 28, height: 28)
-
-            VStack(alignment: .leading, spacing: 1) {
-                Text("Cellmate")
-                    .font(.headline)
-                Text("Tables for Apple Mail")
-                    .font(.caption)
-                    .foregroundStyle(.secondary)
-            }
-
-            Spacer()
-
-            Picker("", selection: $section) {
-                ForEach(Section.allCases) { item in
-                    Label(item.rawValue, systemImage: item.symbolName)
-                        .tag(item)
+            .frame(width: 560, height: 430)
+            .toolbar {
+                ToolbarItem(placement: .principal) {
+                    Picker("", selection: $section) {
+                        ForEach(Section.allCases) { item in
+                            Label(item.rawValue, systemImage: item.symbolName)
+                                .tag(item)
+                        }
+                    }
+                    .pickerStyle(.segmented)
+                    .labelsHidden()
+                    .frame(width: 210)
                 }
             }
-            .pickerStyle(.segmented)
-            .labelsHidden()
-            .frame(width: 210)
         }
-        .padding(.horizontal, 18)
-        .padding(.vertical, 12)
-        .background(.regularMaterial)
+        .windowResizability(.contentSize)
     }
 
     private var setupView: some View {
