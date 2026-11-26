@@ -41,4 +41,4 @@ open Cellmate.xcodeproj
 
 Enable **Cellmate** under **Mail → Settings → Extensions**, then click the table button in any compose toolbar.
 
-Built with [Google Antigravity](https://antigravity.google).
+**AI scope:** All code, assets, and documentation were generated with [Google Antigravity](https://antigravity.google); human involvement was limited to direction and hands-on testing.
