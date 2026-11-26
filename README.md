@@ -13,6 +13,12 @@
   <img src="https://img.shields.io/badge/framework-MailKit%20%7C%20SwiftUI-blue" alt="Frameworks" />
 </p>
 
+<p align="center">
+  <img src="assets/preview_playground.png" width="520" alt="Cellmate Table Editor" />
+  <br/><br/>
+  <img src="assets/preview_setup.png" width="520" alt="Cellmate Setup" />
+</p>
+
 ---
 
 ## What it does
