@@ -58,7 +58,7 @@ struct TablesApp: App {
                 .shadow(color: .black.opacity(0.12), radius: 10, y: 4)
 
             VStack(spacing: 4) {
-                Text("Welcome to Tables")
+                Text("Tables")
                     .font(.title2.bold())
                 Text("Build crisp, native tables right inside Apple Mail's compose toolbar.")
                     .font(.callout)
