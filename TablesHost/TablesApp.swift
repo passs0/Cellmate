@@ -41,7 +41,7 @@ struct TablesApp: App {
                     }
                     .pickerStyle(.segmented)
                     .labelsHidden()
-                    .frame(width: 210)
+                    .fixedSize()
                 }
             }
         }
