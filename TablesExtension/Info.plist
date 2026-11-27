@@ -5,7 +5,7 @@
     <key>CFBundleDevelopmentRegion</key>
     <string>$(DEVELOPMENT_LANGUAGE)</string>
     <key>CFBundleDisplayName</key>
-    <string>Cellmate</string>
+    <string>Tables</string>
     <key>CFBundleExecutable</key>
     <string>$(EXECUTABLE_NAME)</string>
     <key>CFBundleIdentifier</key>
@@ -37,7 +37,7 @@
                 <key>MEComposeIcon</key>
                 <string>tablecells</string>
                 <key>MEComposeIconToolTip</key>
-                <string>Cellmate — Insert Table</string>
+                <string>Tables — Insert Table</string>
             </dict>
         </dict>
     </dict>

@@ -62,7 +62,7 @@ struct TableBuilderView: View {
 
     private var headerBar: some View {
         HStack(spacing: 10) {
-            Label("Cellmate", systemImage: "tablecells")
+            Label("Tables", systemImage: "tablecells")
                 .font(.headline)
 
             Text("\(rowCount) × \(colCount)")

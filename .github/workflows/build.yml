@@ -1,4 +1,4 @@
-name: Build Cellmate
+name: Build Tables
 
 on:
   push:
@@ -22,8 +22,8 @@ jobs:
       - name: Build App & Extension (Unsigned)
         run: |
           xcodebuild \
-            -project Cellmate.xcodeproj \
-            -scheme Cellmate \
+            -project Tables.xcodeproj \
+            -scheme Tables \
             -configuration Release \
             -derivedDataPath build \
             CODE_SIGN_IDENTITY="" \
@@ -34,11 +34,11 @@ jobs:
       - name: Package Artifact
         run: |
           mkdir -p dist
-          cp -R build/Build/Products/Release/Cellmate.app dist/
-          cd dist && zip -r Cellmate.zip Cellmate.app
+          cp -R build/Build/Products/Release/Tables.app dist/
+          cd dist && zip -r Tables.zip Tables.app
 
       - name: Upload Build Artifact
         uses: actions/upload-artifact@v4
         with:
-          name: Cellmate-macOS
-          path: dist/Cellmate.zip
+          name: Tables-macOS
+          path: dist/Tables.zip

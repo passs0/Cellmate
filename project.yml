@@ -1,4 +1,4 @@
-name: Cellmate
+name: Tables
 options:
   bundleIdPrefix: com.passs0
   deploymentTarget:
@@ -13,35 +13,35 @@ settings:
     ENABLE_HARDENED_RUNTIME: YES
 
 targets:
-  Cellmate:
+  Tables:
     type: application
     platform: macOS
     sources:
-      - path: CellmateHost
+      - path: TablesHost
       - path: Shared
     settings:
       base:
-        PRODUCT_BUNDLE_IDENTIFIER: com.passs0.Cellmate
+        PRODUCT_BUNDLE_IDENTIFIER: com.passs0.tables
         GENERATE_INFOPLIST_FILE: YES
-        INFOPLIST_KEY_CFBundleDisplayName: "Cellmate"
+        INFOPLIST_KEY_CFBundleDisplayName: "Tables"
         INFOPLIST_KEY_LSApplicationCategoryType: "public.app-category.productivity"
-        ASSETCATALOG_COMPILER_APPICON_NAME: Cellmate
-        CODE_SIGN_ENTITLEMENTS: CellmateHost/CellmateHost.entitlements
+        ASSETCATALOG_COMPILER_APPICON_NAME: Tables
+        CODE_SIGN_ENTITLEMENTS: TablesHost/TablesHost.entitlements
     dependencies:
-      - target: CellmateExtension
+      - target: TablesExtension
         embed: true
 
-  CellmateExtension:
+  TablesExtension:
     type: app-extension
     platform: macOS
     sources:
-      - path: CellmateExtension
+      - path: TablesExtension
       - path: Shared
     settings:
       base:
-        PRODUCT_BUNDLE_IDENTIFIER: com.passs0.Cellmate.CellmateExtension
-        INFOPLIST_FILE: CellmateExtension/Info.plist
-        CODE_SIGN_ENTITLEMENTS: CellmateExtension/CellmateExtension.entitlements
+        PRODUCT_BUNDLE_IDENTIFIER: com.passs0.tables.extension
+        INFOPLIST_FILE: TablesExtension/Info.plist
+        CODE_SIGN_ENTITLEMENTS: TablesExtension/TablesExtension.entitlements
         LD_RUNPATH_SEARCH_PATHS:
           - "$(inherited)"
           - "@executable_path/../Frameworks"

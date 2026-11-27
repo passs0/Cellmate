@@ -1,9 +1,9 @@
 import AppKit
 import SwiftUI
 
-/// Host container app for CellmateExtension.appex with Apple-style onboarding and an embedded playground.
+/// Host container app for TablesExtension.appex with Apple-style onboarding and an embedded playground.
 @main
-struct CellmateApp: App {
+struct TablesApp: App {
     private enum Section: String, CaseIterable, Identifiable {
         case setup = "Setup"
         case playground = "Playground"
@@ -21,7 +21,7 @@ struct CellmateApp: App {
     @State private var section: Section = .setup
 
     var body: some Scene {
-        WindowGroup("Cellmate") {
+        WindowGroup("Tables") {
             Group {
                 if section == .setup {
                     setupView
@@ -58,7 +58,7 @@ struct CellmateApp: App {
                 .shadow(color: .black.opacity(0.12), radius: 10, y: 4)
 
             VStack(spacing: 4) {
-                Text("Welcome to Cellmate")
+                Text("Welcome to Tables")
                     .font(.title2.bold())
                 Text("Build crisp, native tables right inside Apple Mail's compose toolbar.")
                     .font(.callout)
@@ -77,8 +77,8 @@ struct CellmateApp: App {
                 setupStep(
                     number: "2",
                     symbol: "puzzlepiece.extension.fill",
-                    title: "Enable Cellmate",
-                    detail: "Check Cellmate in the extensions list."
+                    title: "Enable Tables",
+                    detail: "Check Tables in the extensions list."
                 )
                 Divider()
                 setupStep(

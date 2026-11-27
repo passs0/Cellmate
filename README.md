@@ -1,8 +1,8 @@
 <p align="center">
-  <img src="assets/icon.png" width="160" height="160" alt="Cellmate Icon" />
+  <img src="assets/icon.png" width="160" height="160" alt="Tables Icon" />
 </p>
 
-<h1 align="center">Cellmate</h1>
+<h1 align="center">Tables</h1>
 
 <p align="center">
   A MailKit compose extension that adds an interactive table builder to Apple Mail's compose toolbar.
@@ -14,9 +14,9 @@
 </p>
 
 <p align="center">
-  <img src="assets/preview_playground.png" width="520" alt="Cellmate Table Editor" />
+  <img src="assets/preview_playground.png" width="520" alt="Tables Editor" />
   <br/><br/>
-  <img src="assets/preview_setup.png" width="520" alt="Cellmate Setup" />
+  <img src="assets/preview_setup.png" width="520" alt="Tables Setup" />
 </p>
 
 ---
@@ -27,7 +27,7 @@
 - **Import data:** Switch to the **Import** tab to paste CSV, TSV, or Markdown pipe tables and load them into the grid.
 - **Insert into Mail:** Press `⌘↩` (or click **Copy Table**) to copy the styled HTML table (with RTF and Markdown fallbacks), then press `⌘V` in your email.
 
-> MailKit extensions are sandboxed and cannot mutate the email DOM directly, so Cellmate uses clipboard copy-and-paste.
+> MailKit extensions are sandboxed and cannot mutate the email DOM directly, so Tables uses clipboard copy-and-paste.
 
 ## Install
 
@@ -36,10 +36,10 @@ Because MailKit extensions require a trusted code-signing certificate (`pluginki
 ```zsh
 brew install xcodegen
 xcodegen generate
-open Cellmate.xcodeproj
+open Tables.xcodeproj
 ```
 
-Enable **Cellmate** under **Mail → Settings → Extensions**, then click the table button in any compose toolbar.
+Enable **Tables** under **Mail → Settings → Extensions**, then click the table button in any compose toolbar.
 
 ## Credits
 
