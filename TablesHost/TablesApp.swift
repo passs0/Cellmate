@@ -30,11 +30,12 @@ struct TablesApp: App {
                 }
             }
             .frame(width: 560, height: 430)
+            .navigationTitle(section == .setup ? "" : "Tables")
             .toolbar {
                 ToolbarItem(placement: .principal) {
-                    Picker("", selection: $section) {
+                    Picker("View", selection: $section) {
                         ForEach(Section.allCases) { item in
-                            Label(item.rawValue, systemImage: item.symbolName)
+                            Text(item.rawValue)
                                 .tag(item)
                         }
                     }
