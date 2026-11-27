@@ -24,7 +24,7 @@
 ## What it does
 
 - **Grid editor:** Add/delete rows and columns, edit cells with `Tab` navigation, and preview header styling, zebra striping, borders, and alignment live.
-- **Paste data:** Paste CSV, TSV, or Markdown pipe tables directly into the grid.
+- **Import data:** Switch to the **Import** tab to paste CSV, TSV, or Markdown pipe tables and load them into the grid.
 - **Insert into Mail:** Press `⌘↩` (or click **Copy Table**) to copy the styled HTML table (with RTF and Markdown fallbacks), then press `⌘V` in your email.
 
 > MailKit extensions are sandboxed and cannot mutate the email DOM directly, so Cellmate uses clipboard copy-and-paste.
